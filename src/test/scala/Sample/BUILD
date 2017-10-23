@@ -17,5 +17,6 @@ scala_test(
     srcs = ["SimpleParserTest.scala"],
     deps = [
         "//src/main/scala/Sample:simple_parser",
+        "@org_scala_lang_scala_parser_combinators//jar",
     ],
 )
