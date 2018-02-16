@@ -5,3 +5,9 @@ git_repository(
 )
 load("@io_bazel_rules_scala//scala:scala.bzl", "scala_repositories")
 scala_repositories()
+
+maven_jar(
+    name = "org_scala_lang_scala_parser_combinators",
+    artifact = "org.scala-lang:scala-parser-combinators:2.11.0-M4",
+    sha1 = "25b3a88078544a2b9e11b999e5d689cb73d9c0ea",
+)

@@ -7,3 +7,11 @@ scala_library(
     srcs = ["A.scala"],
     deps = [],
 )
+
+scala_library(
+    name = "simple_parser",
+    srcs = ["SimpleParser.scala"],
+    deps = [
+        "@org_scala_lang_scala_parser_combinators//jar"
+    ],
+)

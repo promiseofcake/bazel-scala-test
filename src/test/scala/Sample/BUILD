@@ -10,3 +10,13 @@ scala_test(
         "//src/main/scala/Sample:a"
     ],
 )
+
+scala_test(
+    name = "simple_parser_test",
+    size = "small",
+    srcs = ["SimpleParserTest.scala"],
+    deps = [
+        "//src/main/scala/Sample:simple_parser",
+        "@org_scala_lang_scala_parser_combinators//jar",
+    ],
+)
